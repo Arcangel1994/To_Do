@@ -1,0 +1,23 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+    plugins {
+        id 'com.android.application' version '7.2.2'
+        id 'com.android.library' version '7.2.2'
+        id 'org.jetbrains.kotlin.android' version '1.6.21'
+        id 'androidx.navigation.safeargs' version '2.5.1' apply false
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "CleanToDo"
+include ':app'
